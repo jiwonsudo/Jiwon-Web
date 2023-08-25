@@ -68,15 +68,30 @@ footer {
 
 .footer-contents {
   margin: 20px 15px 0;
+  padding-bottom: 20px;
 }
 
-.link-container {
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
   display: flex;
   align-items: center;
 }
 
-.link-container a {
+.links a {
   margin: 0 5px;
+}
+
+.quote {
+  font-weight: 300;
+}
+
+.email-text {
+  margin-top: 0.5em;
+  font-weight: 300;
 }
 
 .github-a, .github-logo {
@@ -110,8 +125,17 @@ footer {
   font-size: 1.1em;
 }
 
+.go-top-button:hover {
+  cursor: pointer;
+  text-decoration-color: #a8a8a8;
+}
+
 @media screen and (max-width: 580px) {
   .nav-a {
+    text-decoration: none;
+  }
+
+  .go-top-button {
     text-decoration: none;
   }
 }
