@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/reset.css" rel="stylesheet">
-  <link href="/css/common.css" rel="stylesheet">
-  <link href="/css/index.css" rel="stylesheet">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
   <title>JIWON</title>
 </head>
 <body>
 
   <header>
     <a class="logo-container" href="">
-      <img class="logo-img" src="/images/main_logo_black.svg">
+      <img class="logo-img" src="./images/main_logo_black.svg">
       <h1 class="logo-text">Jiwon</h1>
     </a>
     <nav>
@@ -23,25 +23,48 @@
   </header>
 
   <section class="main">
-    <img id="main-image" src="/images/profile_image.png">
+    <img id="main-image" src="./images/profile_image.png">
     <div id="main-image-cover" class="black-cover"></div>
-    <h1>프론트엔드 엔지니어<br>정지원입니다.</h1>
+    <h1>소프트웨어 엔지니어<br>정지원입니다.</h1>
   </section>
 
   <section class="carousel-container">
+    <h1 class="carousel-title">Recent Works</h1>
     <div class="carousel">
       <div class="slide-list">
+        <!-- slide contents start -->
         <div id="clone-of-last" class="slide-item">5</div>
         <div class="slide-item">
-          <img src="/images/project_images/jikchon/main.PNG">
+          <div class="slide-image-container">
+            <img src="./images/project_images/jikchon/main-mobile.png">
+            <img src="./images/project_images/jikchon/mypage-mobile.png">
+            <img src="./images/project_images/jikchon/register-mobile.png">
+          </div>
           <h1>직촌 (Jikchon)</h1>
           <h2>전국 농수산물 직거래 쇼핑몰</h2>
         </div>
-        <div class="slide-item">2</div>
-        <div class="slide-item">3</div>
-        <div class="slide-item">4</div>
-        <div class="slide-item">5</div>
+        <div class="slide-item">
+          <img src="./images/project_images/jikchon/main.PNG">
+          <h1>직촌 (Jikchon)</h1>
+          <h2>전국 농수산물 직거래 쇼핑몰</h2>
+        </div>
+        <div class="slide-item">
+          <img src="./images/project_images/jikchon/main.PNG">
+          <h1>직촌 (Jikchon)</h1>
+          <h2>전국 농수산물 직거래 쇼핑몰</h2>
+        </div>
+        <div class="slide-item">
+          <img src="./images/project_images/jikchon/main.PNG">
+          <h1>직촌 (Jikchon)</h1>
+          <h2>전국 농수산물 직거래 쇼핑몰</h2>
+        </div>
+        <div class="slide-item">
+          <img src="./images/project_images/jikchon/main.PNG">
+          <h1>직촌 (Jikchon)</h1>
+          <h2>전국 농수산물 직거래 쇼핑몰</h2>
+        </div>
         <div id="clone-of-first" class="slide-item">1</div>
+        <!-- slide contents end -->
       </div>
     </div>
     <button class="left-button">이전</button>
@@ -50,14 +73,19 @@
 
   <footer>
     <div class="footer-contents">
-      <a class="github-a" href="https://github.com/jiwonsudo" target="_blank">
-        <img class="github-logo" src="/images/github_logo.svg">
-      </a>
+      <div class="link-container">
+        <a class="github-a" href="https://github.com/jiwonsudo" target="_blank">
+          <img class="github-logo" src="./images/github_logo.svg">
+        </a>
+        <a class="email-a" href="mailto:wondev112@gmail.com">
+          <img class="email-icon" src="./images/email_icon.svg">
+        </a>
+      </div>
       <p class="copyright-text">&copy 2023. Jiwon Jeong All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="/js/common.js"></script>
-  <script src="/js/index.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
