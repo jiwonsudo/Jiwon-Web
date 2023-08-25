@@ -1,12 +1,21 @@
 header {
   width: 100%;
-  height: 4vh;
+  height: 40px;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
   /* border-bottom: 0.5px solid #000000; */
+}
+
+header.clear {
+  top: -60px;
+  transition: 0.2s ease-in-out;
 }
 
 .logo-container {
@@ -25,7 +34,7 @@ header {
   height: 0.9em;
   margin-left: 0.3em;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -34,27 +43,30 @@ nav {
   display: flex;
   align-items: center;
 }
-
+å
 .nav-a {
-  margin: 0 0.5em;
+  margin: 0 0.7em;
   height: 0.8em;
   font-size: 1.2em;
   color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
 }
 
 .nav-a:hover {
-  text-decoration: underline;
+  text-decoration-color: #a8a8a8;
 }
 
 footer {
   width: 100%;
   height: 120px;
-  background-color: #007310;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
 .footer-contents {
   padding: 10px 15px;
+  border-top: 1px solid #FFFFFF;
 }
 
 .github-a {
@@ -70,4 +82,10 @@ footer {
 .copyright-text {
   margin-top: 50px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-a {
+    text-decoration: none;
+  }
 }
