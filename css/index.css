@@ -2,6 +2,15 @@ body {
   background-color: #000000;
 }
 
+header {
+  background-color: transparent;
+}
+
+header.black {
+  background-color: #000000;
+  transition: 0.2s ease-in-out;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -28,49 +37,140 @@ body {
   background: linear-gradient(transparent, #000000);
 }
 
-.main h1 {
+.main-about {
+  width: calc(100vw - 30px);
   margin: 0 15px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.main-about h1 {
   font-size: 3em;
   font-weight: 500;
   line-height: 1.5em;
+}
+
+.main-about a {
+  width: 10em;
+  margin-top: 1em;
+  height: 1em;
+}
+
+.frame-button {
+  padding: 0.5em;
+  border: 0.5px solid #FFFFFF;
+  display: block;
+  text-align: center;
+  text-decoration: none;
   color: #FFFFFF;
-  position: absolute;
-  bottom: 1em;
-  left: 0;
+}
+
+.frame-button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.carousel-section {
+  background-color: #F86206;
+  padding-bottom: 50px;
+  border-top: 0.5px solid #FFFFFF;
+}
+
+.carousel-container {
+  margin: 50px 15px 0;
+  position: relative;
+}
+
+.carousel-title {
+  font-family: 'Lora', serif;
+  font-size: 2.3em;
+  color: #FFFFFF;
 }
 
 .carousel {
-  width: 100vw;
-  height: 500px;
+  width: 80vw;
+  height: 600px;
   margin: 50px auto;
   overflow: hidden;
 }
 
 .slide-list {
   width: calc(9 * 80vw);
-  height: 500px;
+  height: 600px;
   display: flex;
 }
 
 .slide-item {
   width: 80vw;
-  height: 500px;
+  height: 100%;
+  color: #FFFFFF;
   text-align: center;
-  line-height: 100px;
-  font-size: larger;
 }
 
-.slide-item img {
+.slide-image-container {
   width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-image-container img {
   height: 100%;
   object-fit: cover;
+  margin: 0 0.7em;
 }
 
-.left-button, .right-button {
-  margin-left: 10px;
+.slide-item h1 {
+  margin-top: 1.5em;
+  font-size: 1.3em;
+}
+
+.slide-item h2 {
+  margin-top: 1em;
+  line-height: 1.2em;
+}
+
+.carousel-container button {
+  width: 3em;
+  aspect-ratio: 1 / 1;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+}
+
+.carousel-container button:hover {
+  cursor: pointer;
+}
+
+.carousel-container button img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-button {
+  left: 1em;
+  transform: scaleX(-1);
+}
+
+.right-button {
+  right: 1em;
+}
+
+.carousel-section a {
+  width: 7em;
+  margin: 0 auto;
 }
 
 
-@media screen and (max-width: 500px) {
 
+@media screen and (max-width: 580px) {
+  .main-about {
+    display: block;
+  }
 }

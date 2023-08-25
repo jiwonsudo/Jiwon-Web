@@ -12,7 +12,7 @@
 
   <header>
     <a class="logo-container" href="">
-      <img class="logo-img" src="./images/main_logo_black.svg">
+      <img class="logo-img" src="./images/main_logo_white.svg">
       <h1 class="logo-text">Jiwon</h1>
     </a>
     <nav>
@@ -25,50 +25,52 @@
   <section class="main">
     <img id="main-image" src="./images/profile_image.png">
     <div id="main-image-cover" class="black-cover"></div>
-    <h1>소프트웨어 엔지니어<br>정지원입니다.</h1>
+    <div class="main-about">
+      <h1>소프트웨어 엔지니어<br>정지원입니다.</h1>
+      <a class="frame-button" href="">
+        <p>Learn more about me</p>
+      </a>
+    </div>
   </section>
 
-  <section class="carousel-container">
-    <h1 class="carousel-title">Recent Works</h1>
-    <div class="carousel">
-      <div class="slide-list">
-        <!-- slide contents start -->
-        <div id="clone-of-last" class="slide-item">5</div>
-        <div class="slide-item">
-          <div class="slide-image-container">
-            <img src="./images/project_images/jikchon/main-mobile.png">
-            <img src="./images/project_images/jikchon/mypage-mobile.png">
-            <img src="./images/project_images/jikchon/register-mobile.png">
+  <section class="carousel-section">
+    <div class="carousel-container">
+      <h1 class="carousel-title">Recent Works</h1>
+      <div class="carousel">
+        <div class="slide-list">
+          <!-- slide contents start -->
+          <div id="clone-of-last" class="slide-item">5</div>
+          <div class="slide-item">
+            <div class="slide-image-container">
+              <img src="./images/project_images/jikchon/main-mobile.png">
+              <img class="removable" src="./images/project_images/jikchon/mypage-mobile.png">
+              <img class="removable" src="./images/project_images/jikchon/register-mobile.png">
+            </div>
+            <h1>직촌 (Jikchon)</h1>
+            <h2>전국 농수산물 직거래 쇼핑몰 / Direct transaction shopping mall for agricultural products</h2>
           </div>
-          <h1>직촌 (Jikchon)</h1>
-          <h2>전국 농수산물 직거래 쇼핑몰</h2>
+          <div class="slide-item">
+            <div class="slide-image-container">
+              <img src="./images/project_images/qrazy/main.png">
+              <img class="removable" src="./images/project_images/qrazy/cart.png">
+            </div>
+            <h1>Qrazy</h1>
+            <h2>QR 키오스크 및 영업 관리 시스템 / QR Kiosk and Sales Management System</h2>
+          </div>
+          <div id="clone-of-first" class="slide-item">1</div>
+          <!-- slide contents end -->
         </div>
-        <div class="slide-item">
-          <img src="./images/project_images/jikchon/main.PNG">
-          <h1>직촌 (Jikchon)</h1>
-          <h2>전국 농수산물 직거래 쇼핑몰</h2>
-        </div>
-        <div class="slide-item">
-          <img src="./images/project_images/jikchon/main.PNG">
-          <h1>직촌 (Jikchon)</h1>
-          <h2>전국 농수산물 직거래 쇼핑몰</h2>
-        </div>
-        <div class="slide-item">
-          <img src="./images/project_images/jikchon/main.PNG">
-          <h1>직촌 (Jikchon)</h1>
-          <h2>전국 농수산물 직거래 쇼핑몰</h2>
-        </div>
-        <div class="slide-item">
-          <img src="./images/project_images/jikchon/main.PNG">
-          <h1>직촌 (Jikchon)</h1>
-          <h2>전국 농수산물 직거래 쇼핑몰</h2>
-        </div>
-        <div id="clone-of-first" class="slide-item">1</div>
-        <!-- slide contents end -->
       </div>
+      <button class="left-button">
+        <img src="./images/chevron.svg">
+      </button>
+      <button class="right-button">
+        <img src="./images/chevron.svg">
+      </button>
     </div>
-    <button class="left-button">이전</button>
-    <button class="right-button">다음</button>
+    <a class="frame-button" href="">
+      <p>See more work</p>
+    </a>
   </section>
 
   <footer>
@@ -81,7 +83,10 @@
           <img class="email-icon" src="./images/email_icon.svg">
         </a>
       </div>
-      <p class="copyright-text">&copy 2023. Jiwon Jeong All rights reserved.</p>
+      <div class="copyright-container">
+        <p class="copyright-text">Jiwon Jeong -  &copy 2023</p>
+        <button id="go-top-button" class="go-top-button">Go to top</button>
+      </div>
     </div>
   </footer>
 
