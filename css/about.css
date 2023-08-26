@@ -153,3 +153,11 @@ header {
   margin: 20px 0 10px;
   font-size: 1em;
 }
+
+@media screen and (max-width: 580px) {
+  .work-a {
+    width: 13em;
+    margin: 20px 0 10px;
+    font-size: 0.7em;
+  }
+}
