@@ -12,5 +12,4 @@ addEventListener('mousewheel', (event) => {
 btnGoTop.addEventListener('click', () => {
   window.scrollTo(0, 0);
   header.classList.remove('clear');
-  header.classList.remove('black');
 });
