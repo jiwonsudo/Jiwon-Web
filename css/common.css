@@ -59,8 +59,8 @@ nav {
 
 footer {
   width: 100%;
-  height: 120px;
-  margin: 0px auto 50px;
+  margin: 0px auto;
+  padding-bottom: 30px;
   background-color: #000000;
   color: #FFFFFF;
   border-top: 1px solid #FFFFFF;
@@ -68,7 +68,6 @@ footer {
 
 .footer-contents {
   margin: 20px 15px 0;
-  padding-bottom: 20px;
 }
 
 .top-container {
@@ -114,6 +113,7 @@ footer {
 
 .copyright-text {
   font-weight: 500;
+  color: #FFFFFF;
 }
 
 .go-top-button {
