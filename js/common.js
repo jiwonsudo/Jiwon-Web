@@ -6,11 +6,16 @@ let preScrollTop = 0;
 addEventListener('scroll',() => {
   let nextScrollTop =  window.scrollY || window.pageYOffset;
 
-  if (preScrollTop < nextScrollTop) { //down
-    header.classList.add('clear');
-  } else { // up
+  if (nextScrollTop < 20) {
     header.classList.remove('clear');
+  } else {
+    if (preScrollTop < nextScrollTop) { //down
+      header.classList.add('clear');
+    } else { // up
+      header.classList.remove('clear');
+    }
   }
+
   preScrollTop = nextScrollTop;
 });
 
