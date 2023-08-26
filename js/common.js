@@ -3,10 +3,11 @@ const btnGoTop = document.getElementById('go-top-button');
 
 let preScrollTop = 0;
 
-addEventListener('scroll',() => {
+addEventListener('scroll', () => {
   let nextScrollTop =  window.scrollY || window.pageYOffset;
 
-  if (nextScrollTop < 20) {
+  if (nextScrollTop < 30) {
+    console.log(nextScrollTop);
     header.classList.remove('clear');
   } else {
     if (preScrollTop < nextScrollTop) { //down
