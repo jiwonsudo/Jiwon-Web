@@ -9,21 +9,22 @@ const nextBtn = document.querySelector('.right-button');
 // MainImage-ScrollEffect feature
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
-addEventListener('mousewheel', (event) => {
-  const scrolledHeight = window.scrollY || window.pageYOffset;
-  if ((scrolledHeight / vh) <= 1 && (scrolledHeight / vh) > 0) {
-    if (event.deltaY > 0) {
-      mainImage.style.top = `${scrolledHeight / 8}px`;
+addEventListener('scroll',() => {
+  let nextScrollTop =  window.scrollY || window.pageYOffset;
+
+  if ((nextScrollTop / vh) <= 1 && (nextScrollTop / vh) > 0) {
+    if (preScrollTop < nextScrollTop) {
+      mainImage.style.top = `${nextScrollTop / 8}px`;
     } else {
-      mainImage.style.top = `${scrolledHeight / 8}px`;
+      mainImage.style.top = `${nextScrollTop / 8}px`;
     }
   }
 
-  if ((scrolledHeight / vh) > 0.05) {
+  if ((nextScrollTop / vh) > 0.05) {
     document.querySelector('header').classList.add('black');
   } else document.querySelector('header').classList.remove('black');
 
-  if (scrolledHeight <= 0.1) mainImage.style.top = '0px';
+  if (nextScrollTop <= 0.1) mainImage.style.top = '0px';
 });
 
 // Carousel feature

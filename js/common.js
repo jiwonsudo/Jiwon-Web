@@ -1,12 +1,17 @@
 const header = document.querySelector('header');
 const btnGoTop = document.getElementById('go-top-button');
 
-addEventListener('mousewheel', (event) => {
-  if (event.deltaY > 0) {
+let preScrollTop = 0;
+
+addEventListener('scroll',() => {
+  let nextScrollTop =  window.scrollY || window.pageYOffset;
+
+  if (preScrollTop < nextScrollTop) { //down
     header.classList.add('clear');
-  } else {
+  } else { // up
     header.classList.remove('clear');
   }
+  preScrollTop = nextScrollTop;
 });
 
 btnGoTop.addEventListener('click', () => {
