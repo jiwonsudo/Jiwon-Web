@@ -2,6 +2,8 @@ const header = document.querySelector('header');
 const btnGoTop = document.getElementById('go-top-button');
 
 let preScrollTop = 0;
+let isMobile = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) <= 580 ? true : false;
+const minScrollHeight = isMobile ? 100 : 30;
 
 addEventListener('scroll', () => {
   let nextScrollTop =  window.scrollY || window.pageYOffset;
