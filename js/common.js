@@ -6,8 +6,7 @@ let preScrollTop = 0;
 addEventListener('scroll', () => {
   let nextScrollTop =  window.scrollY || window.pageYOffset;
 
-  if (nextScrollTop < 30) {
-    console.log(nextScrollTop);
+  if (nextScrollTop < 50) {
     header.classList.remove('clear');
   } else {
     if (preScrollTop < nextScrollTop) { //down
