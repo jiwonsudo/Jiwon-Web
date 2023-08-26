@@ -8,7 +8,7 @@ const minScrollHeight = isMobile ? 100 : 30;
 addEventListener('scroll', () => {
   let nextScrollTop =  window.scrollY || window.pageYOffset;
 
-  if (nextScrollTop < 50) {
+  if (nextScrollTop < minScrollHeight) {
     header.classList.remove('clear');
   } else {
     if (preScrollTop < nextScrollTop) { //down
