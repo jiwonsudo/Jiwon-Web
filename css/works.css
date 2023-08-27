@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+header.white {
+  background-color: #FFFFFF;
+  transition: 0.2s ease-in-out;
+}
+
+.logo-text, .nav-a {
+  color:#EEA47F;
+  text-decoration-color: #EEA47F;
+}
+
+.logo-text.black, .nav-a.black {
+  color:#000000;
+  text-decoration-color: #000000;
+}
+
+.introduce-section {
+  padding: 200px 15px 20px;
+  background-color: #00539C;
+  color: #EEA47F;
+}
+
+.introduce-text-container {
+  display: flex;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+.introduce-text-container h1 {
+  margin-right: 0.7em;
+  font-size: 7em;
+  font-family: 'PyeongChangPeace-Bold';
+}
+
+.introduce-text-container h2 {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+@media screen and (max-width: 580px) {
+  .introduce-text-container h1 {
+    margin-right: 0.5em;
+    font-size: 3em;
+  }
+}
