@@ -5,7 +5,9 @@ body {
 }
 
 header {
+  width: 100vw;
   background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 .logo-text, .nav-a {
