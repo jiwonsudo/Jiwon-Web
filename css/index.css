@@ -76,13 +76,13 @@ header.black {
 }
 
 .carousel-section {
-  background-color: #F86206;
+  margin: 0 15px;
   padding-bottom: 50px;
   border-top: 0.5px solid #FFFFFF;
 }
 
 .carousel-container {
-  margin: 50px 15px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -168,14 +168,12 @@ header.black {
 }
 
 .blog-section {
+  margin: 0 15px 50px;
   border-top: 0.5px solid #FFFFFF;
-  background-color: #194493;
-  padding-bottom: 50px;
 }
 
 .blog-container {
-  margin: 0 15px;
-  padding: 50px 0;
+  margin-top: 20px;
 }
 
 .blog-container-title {
