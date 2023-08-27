@@ -82,6 +82,5 @@ if (vw <= 950) removeElementsByClass('removable');
 // clear header feature
 
 document.getElementById('go-top-button').addEventListener('click', () => {
-  window.scrollTo(0, 0);
-  header.classList.remove('black');
+  document.querySelector('header').classList.remove('black');
 });
