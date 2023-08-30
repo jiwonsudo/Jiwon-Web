@@ -29,3 +29,17 @@ document.getElementById('go-top-button').addEventListener('click', () => {
   });
   document.querySelector('.logo-img').src = './images/assets/main_logo_pink.svg';
 });
+
+// Image auto width feature (in image-container)
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+if (vw > 580) {
+  document.querySelectorAll('.image-container').forEach((div) => {
+    let numOfChildren = div.childElementCount;
+    Array.from(div.children).forEach((imgElement) => {
+      imgElement.style.width = `${97 / numOfChildren}%`;
+    });
+  });
+
+  // document.querySelector('.image-container').style.display = 'block';
+}

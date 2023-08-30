@@ -32,16 +32,13 @@ header.white {
   text-decoration-color: #000000;
 }
 
-.introduce-section {
-  padding: 200px 15px 20px;
+.introduce-text-container {
+  padding: 200px 15px 40px;
   background-color: #00539C;
   color: #EEA47F;
-}
-
-.introduce-text-container {
   display: flex;
   justify-content: space-between;
-  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 .introduce-text-container h1 {
@@ -55,9 +52,212 @@ header.white {
   line-height: 1.3em;
 }
 
+.decoration-bars div {
+  background-color: #00539C;
+}
+
+.decoration-bar:nth-child(1){
+  height: 30px;
+  margin-top: 2px;
+}
+
+.decoration-bar:nth-child(2){
+  height: 27px;
+  margin-top: 4px;
+}
+
+.decoration-bar:nth-child(3){
+  height: 24px;
+  margin-top: 6px;
+}
+
+.decoration-bar:nth-child(4){
+  height: 21px;
+  margin-top: 8px;
+}
+
+.decoration-bar:nth-child(5){
+  height: 18px;
+  margin-top: 10px;
+}
+
+.decoration-bar:nth-child(6){
+  height: 15px;
+  margin-top: 12px;
+}
+
+.decoration-bar:nth-child(7){
+  height: 12px;
+  margin-top: 14px;
+}
+
+.decoration-bar:nth-child(8){
+  height: 9px;
+  margin-top: 16px;
+}
+
+.decoration-bar:nth-child(9){
+  height: 6px;
+  margin-top: 18px;
+}
+
+.decoration-bar:nth-child(10){
+  height: 3px;
+  margin-top: 20px;
+}
+
+.description {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-section, .app-section, .other-section {
+  margin: 100px 15px 0;
+  padding-top: 20px;
+  border-top: 0.5px solid #000000;
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 2.2em;
+}
+
+.works {
+  width: calc(100% - 40px);
+  margin: 40px 20px 0;
+}
+
+.work {
+  width: 100%;
+  margin: 80px 0 120px;
+  display: flex;
+}
+
+.image-container {
+  width: 30%;
+  margin-right: 5%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  width: 70%;
+}
+
+.text-container-title {
+  display: flex;
+  justify-content: space-between;
+  word-break: keep-all;
+}
+
+.text-container-title h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.text-container-title img {
+  height: 1.6em;
+}
+
+.text-container h2 {
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.work p {
+  margin-top: 20px;
+  line-height: 1.2em;
+}
+
+.tools {
+  margin-top: 18px;
+}
+
+.tools p:not(:first-child) {
+  margin: 2px 0;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.role-self {
+  margin: 2px 0;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #007a18;
+}
+
+.role-other {
+  margin: 2px 0;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #b09709;
+}
+
+.role-front {
+  margin: 2px 0;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #be2d10;
+}
+
+.role-back {
+  margin: 2px 0;
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-weight: 300;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #00539C;
+}
+
 @media screen and (max-width: 580px) {
   .introduce-text-container h1 {
     margin-right: 0.5em;
     font-size: 3em;
+  }
+
+  .section-title {
+    font-size: 1.7em;
+  }
+
+  .works {
+    margin: 40px 10px 0;
+  }
+
+  .text-container-title h1 {
+    font-size: 1.2em;
+    line-height: 1.1em;
+  }
+
+  .image-container img {
+    object-position: top;
+    object-fit: contain;
+  }
+
+  .removable {
+    display: none;
   }
 }
