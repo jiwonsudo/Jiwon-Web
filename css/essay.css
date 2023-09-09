@@ -31,7 +31,7 @@ header.white {
   font-weight: 200;
 }
 
-.blogs {
+.essays {
   margin: 10px 15px 60px;
   border-top: 0.5px solid #000000;
 }
@@ -42,7 +42,7 @@ header.white {
   justify-content: space-around;
 }
 
-.blog {
+.essay {
   width: 40%;
 }
 
