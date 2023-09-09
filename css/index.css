@@ -167,57 +167,57 @@ header.black {
   margin: 0 auto;
 }
 
-.blog-section {
+.essay-section {
   margin: 0 15px 50px;
   border-top: 0.5px solid #FFFFFF;
 }
 
-.blog-container {
+.essay-container {
   margin-top: 20px;
 }
 
-.blog-container-title {
+.essay-container-title {
   font-family: 'Lora', serif;
   font-size: 2.3em;
   color: #FFFFFF;
 }
 
-.blogs {
+.essays {
   width: 80%;
   margin: 90px auto 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.blog {
+.essay {
   width: 45%;
   background-color: #FFFFFF;
 }
 
-.blog img {
+.essay img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-.blog-text {
+.essay-text {
   margin: 1em 1em 0;
 }
 
-.blog h1 {
+.essay h1 {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 2.3em;
 }
 
-.blog p {
+.essay p {
   margin-top: 3em;
   padding-bottom: 1em;
   line-height: 1.4em;
   word-break: keep-all;
 }
 
-.blog-section a {
-  width: 8em;
+.essay-section a {
+  width: 8.5em;
   margin: 0 auto;
 }
 
@@ -228,19 +228,19 @@ header.black {
     display: block;
   }
 
-  .blogs {
+  .essays {
     display: block;
   }
 
-  .blog {
+  .essay {
     width: 100%;
   }
 
-  .blog:nth-child(2) {
+  .essay:nth-child(2) {
     margin-top: 30px;
   }
 
-  .blog p {
+  .essay p {
     margin: 3em auto 0;
     padding-bottom: 1em;
     line-height: 1.4em;
