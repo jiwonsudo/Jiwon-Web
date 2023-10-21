@@ -190,6 +190,7 @@ header.black {
 }
 
 .essay {
+  margin: 0 auto;
   width: 45%;
   background-color: #FFFFFF;
 }
@@ -206,7 +207,7 @@ header.black {
 
 .essay h1 {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
 }
 
 .essay p {
@@ -214,6 +215,8 @@ header.black {
   padding-bottom: 1em;
   line-height: 1.4em;
   word-break: keep-all;
+  font-size: 0.9em;
+  color: rgb(121, 121, 121);
 }
 
 .essay-section a {

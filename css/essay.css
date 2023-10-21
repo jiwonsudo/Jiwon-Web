@@ -27,7 +27,7 @@ header.white {
 
 .main-title h1 {
   margin: 30px 15px;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 200;
 }
 
@@ -62,13 +62,15 @@ header.white {
 }
 
 .text-container h1 {
-  margin-top: 1.2em;
-  font-family: 'Lora', serif;
-  font-size: 2.2em;
+  margin-top: 1em;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1.8em;
 }
 
 .text-container p {
-  margin-top: 1.2em;
+  margin-top: 0.8em;
+  font-size: 0.9em;
+  color: rgb(121, 121, 121);
 }
 
 @media screen and (max-width: 580px) {
