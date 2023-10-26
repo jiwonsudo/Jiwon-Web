@@ -75,6 +75,10 @@ header.black {
   color: #000000;
 }
 
+.black-border {
+  border: black !important;
+}
+
 .carousel-section {
   margin: 0 15px;
   padding-bottom: 50px;
@@ -197,7 +201,7 @@ header.black {
 
 .essay img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -216,11 +220,11 @@ header.black {
   line-height: 1.4em;
   word-break: keep-all;
   font-size: 0.9em;
-  color: rgb(121, 121, 121);
+  color: rgb(29, 29, 29);
 }
 
 .essay-section a {
-  width: 8.5em;
+  width: 5em;
   margin: 0 auto;
 }
 
